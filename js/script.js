@@ -3,6 +3,8 @@ $(window).on('beforeunload', function() {
 });
 
 $(document).ready(function(){
+  listen();
+
   $root = $('body, html');
   let $active;
   let $prev;
@@ -36,7 +38,22 @@ $(document).ready(function(){
       }
     }
   });
+});
 
+function slideChanged() {
+  if($("#projects-wrapper").is(".active")) {
+    console.log("changed projects");
+    $("#link1 > button").css("color", "#F22F41");
+    $("#link2 > button").css("color", "#fff");
+  }
+  else if($("#home-wrapper").is(".active")) {
+    console.log("changed home");
+    $("#link2 > button").css("color", "#F22F41");
+    $("#link1 > button").css("color", "#fff");
+  }
+}
+
+function listen() {
   if($(window).width() > 767){
     $("#home-wrapper").css("opacity", 1);
   }
@@ -81,17 +98,4 @@ $(document).ready(function(){
     $(this).children(".img").css("opacity", 1);
     $(this).children(".img").css("transform", "scale(1.0)");
   });
-});
-
-function slideChanged() {
-  if($("#projects-wrapper").is(".active")) {
-    console.log("changed projects");
-    $("#link1 > button").css("color", "#F22F41");
-    $("#link2 > button").css("color", "#fff");
-  }
-  else if($("#home-wrapper").is(".active")) {
-    console.log("changed home");
-    $("#link2 > button").css("color", "#F22F41");
-    $("#link1 > button").css("color", "#fff");
-  }
 }
