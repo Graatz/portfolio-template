@@ -1,39 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/fontello.css">
-	<link rel="stylesheet" type="text/css" href="css/small.css">
-	<link rel="stylesheet" type="text/css" href="css/medium.css">
-	<link rel="stylesheet" type="text/css" href="css/large.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700|Raleway:300,400,800" rel="stylesheet">
-	<script src="js/bootstrap.js"></script>
-	<script src="js/jquery.scrollTo.js"></script>
-	<script src="framework.js"></script>
-	<script src="js/script.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700|Raleway:300,400,800">
+	<link rel="stylesheet" href="css/fontello.css">
+	<link rel="stylesheet" href="css/small.css">
+	<link rel="stylesheet" href="css/medium.css">
+	<link rel="stylesheet" href="css/large.css">
 </head>
 <body>
-	<nav class="navbar navbar-inverse">
-		<header class="brand text-center">
-			<a class="logo" href="" alt="Logo"><strong class="primary-color">LOREM</strong><strong class="secondary-color">IPSUM</strong></a>
+	<nav class="navbar">
+		<header class="brand">
+			<a class="logo" href=""><strong class="primary-color">LOREM</strong><strong class="secondary-color">IPSUM</strong></a>
 		</header>
-		<ul class="navbar-nav justify-content-end">
-			<li class="nav-item">
-				<a class="nav-link" id="link1"><button>Home</button></a>
-				<li class="nav-item">
-					<a class="nav-link" id="link2"><button>Projects</button></a>
-				</li>
-				<li>
-					<div class="icon-column">
-						<li><a href="https://github.com/Graatz"><i class="icon-github-circled"></i></li></a>
-						<li><i class="icon-google-plus-circle"></i></li>
-					</div>
-				</li>
-			</ul>
-		</nav>
+		<ul class="navbar-nav">
+			<li class="nav-item"><button id="link1">Home</button></li>
+			<li class="nav-item"><button id="link2">Projects</button></a></li>
+			<li class="nav-item"><a href="https://github.com/Graatz"><span class="icon-github-circled" aria-label="GitHub"></span></a></li>
+			<li class="nav-item"><a href="#"><span class="icon-google-plus-circle" aria-label="GooglePlus"></span></a></li>
+		</ul>
+	</nav>
 
 		<div id="slider">
 
@@ -42,24 +30,24 @@
 				<div class="align-items-center justify-content-center middle-row">
 					<div class="col text-center align-items-center ">
 						<h1><strong class="primary-color">Lorem</strong> ipsum <strong class="secondary-color">dolor</strong> sit <strong>amet</strong></h1>
-						<h3>Lorem <strong class="primary-color">ipsum</strong> <strong class="secondary-color">dolor</strong> sit</h3>
-						<h5>WEB <strong class="secondary-color">DEVELOPER</strong> / <strong class="primary-color">DESIGNER</strong></h5>
+						<h2>Lorem <strong class="primary-color">ipsum</strong> <strong class="secondary-color">dolor</strong> sit</h3>
+						<h3>WEB <strong class="secondary-color">DEVELOPER</strong> / <strong class="primary-color">DESIGNER</strong></h5>
 						<p class="description">
-							At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum </br>deleniti atque corrupti quos dolores
-							et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui </br>officia deserunt mollitia animi, id est laborum et dolorum fuga.</br></br>
+							At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+							et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.<br><br>
 							&copy Copyright 2017 Jakub Kosior
 						</p>
 					</div>
 				</div>
 				<div class="bottom-row align-items-center justify-content-center">
-					<i class="icon-down-open"></i>
+					<span class="icon-down-open" aria-label="Down"></span>
 				</div>
 			</section>
 
 			<section id="projects-wrapper" class="projects">
 				<figure class="img-container">
 					<figcaption class="overlay text-center">
-						<h5><strong class="primary-color">Project</strong> <strong class="secondary-color">number</strong> one</h5>
+						<h2><strong class="primary-color">Project</strong> <strong class="secondary-color">number</strong> one</h2>
 						<p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
 						<p>TECHNOLOGIES: C#, MonoGame</p>
 						<button class="btn btn-info">Read more</button>
@@ -69,7 +57,7 @@
 
 				<figure class="img-container">
 					<figcaption class="overlay text-center">
-						<h5><strong class="primary-color">Project</strong> <strong class="secondary-color">number</strong> two</h5>
+						<h2><strong class="primary-color">Project</strong> <strong class="secondary-color">number</strong> two</h2>
 						<p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
 						<p>TECHNOLOGIES: C#, WinForms</p>
 						<button class="btn btn-info">Read more</button>
@@ -79,7 +67,7 @@
 
 				<figure class="img-container">
 					<figcaption class="overlay text-center">
-						<h5><strong class="primary-color">Project</strong> <strong class="secondary-color">number</strong> three</h5>
+						<h2><strong class="primary-color">Project</strong> <strong class="secondary-color">number</strong> three</h2>
 						<p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
 						<p>TECHNOLOGIES: C#, ASP.NET MVC, Entity Framework</p>
 						<button class="btn btn-info">Read more</button>
@@ -89,7 +77,7 @@
 
 				<figure class="img-container">
 					<figcaption class="overlay text-center">
-						<h5><strong class="primary-color">Project</strong> <strong class="secondary-color">number</strong> four</h5>
+						<h2><strong class="primary-color">Project</strong> <strong class="secondary-color">number</strong> four</h2>
 						<p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
 						<p>TECHNOLOGIES: JavaScript / JQuery</p>
 						<button class="btn btn-info">Read more</button>
@@ -101,4 +89,9 @@
 	</div>
 </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.scrollTo.js"></script>
+<script src="framework.js"></script>
+<script src="js/script.js"></script>
 </html>
