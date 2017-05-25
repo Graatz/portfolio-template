@@ -10,18 +10,21 @@ body {
 h1 {
 	text-transform: uppercase;
 	font-size: 30px;
+	margin: 0;
 }
 h2 {
 	text-transform: uppercase;
 	font-size: 25px;
+	margin: 0;
 }
 h3 {
 	text-transform: uppercase;
-	font-size: 25px;
+	font-size: 15px;
+	margin: 0;
 }
 p {
 	font-weight: 600;
-	color: #444;
+	color: #777;
 	font-size: 12px;
 	margin-bottom: 5px;
 }
@@ -35,8 +38,11 @@ a.logo:focus {
 }
 
 .col {
-	max-width: 50%;
-	padding: 0 10px 0 10px;
+	text-align: center;
+	justify-content: center;
+	max-width: 100%;
+	padding-right: 30px;
+	padding-left: 20px;
 }
 
 .primary-color {
@@ -86,7 +92,7 @@ a.logo:focus {
 	max-width: 100%;
 	width: 100%;
 	overflow: hidden;
-	margin-bottom: 0;
+	margin: 0 0 10px 0;
 }
 .img-container:hover {
 	cursor: pointer;
@@ -134,25 +140,26 @@ a.logo:focus {
 	outline: none;
 	background-color: transparent;
 }
-.overlay < button:focus {
-	outline: none;
-	background-color: transparent;
-}
 
 .brand {
-	width: 120px;
+	visibility: hidden;
+	width: 0px;
 	font-size: 13px;
+}
+.brand > a{
+	text-decoration: none;
 }
 
 .navbar {
+	background-color: #111;
 	z-index: 99;
 	position: fixed;
 	display: flex;
 	align-items: center;
+	justify-content: center !important;
 	margin: 0;
-	padding: 0 20px 0 20px;
 	max-width: 100%;
-	height: 80px;
+	height: 50px;
 	width: 100vw;
 }
 
@@ -161,11 +168,11 @@ a.logo:focus {
 	align-items: center;
 	list-style: none;
 	margin: 0;
-	-webkit-box-pack: end !important;
-	-webkit-justify-content: flex-end !important;
-	-ms-flex-pack: end !important;
-	justify-content: flex-end !important;
+	justify-content: center !important;
 	width: 100%;
+}
+ul.navbar-nav {
+	padding: 0;
 }
 
 .navbar-nav > .nav-item > button {
@@ -175,18 +182,18 @@ a.logo:focus {
 	font-family: 'Raleway';
 	color: #ccc;
 	text-transform: uppercase;
-	font-size: 10px;
+	font-size: 15px;
 	font-weight: 600;
 	transition: color 0.2s ease-in-out;
 }
 .navbar-nav > .nav-item > button:hover {
 	color: #fff;
-	outline: none;
+	outline: 0;
 }
 .navbar-nav > .nav-item > button:focus {
 	color: #F22F41;
 	opacity: 1;
-	outline: none;
+	outline: 0;
 }
 
 .icon-column  {
@@ -196,7 +203,7 @@ a.logo:focus {
 
 .icon-github-circled {
 	color: #fff;
-	font-size: 18px;
+	font-size: 35px;
 	transition: color 0.3s ease-in-out;
 }
 .icon-github-circled:hover {
@@ -206,7 +213,7 @@ a.logo:focus {
 
 .icon-google-plus-circle {
 	color: #fff;
-	font-size: 18px;
+	font-size: 35px;
 	transition: color 0.3s ease-in-out;
 }
 .icon-google-plus-circle:hover {

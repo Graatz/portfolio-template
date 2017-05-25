@@ -156,6 +156,10 @@
     font-weight: 600;
     font-size: 13px;
   }
+  .overlay > button:focus + .overlay{
+    opacity: 1;
+    transform: scale(1);
+  }
 
   .brand {
     display: flex;
@@ -217,11 +221,6 @@
   .navbar-nav > .nav-item > button:focus {
     opacity: 1;
     outline: none;
-  }
-
-  .icon-column  {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
   }
 
   .icon-github-circled {

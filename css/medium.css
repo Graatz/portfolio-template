@@ -17,6 +17,9 @@
   	font-size: 13px;
   }
 
+  .col {
+    max-width: 70%;
+  }
 
   .img-container {
     position: relative;
@@ -30,6 +33,46 @@
   }
   .img-container:hover {
   	cursor: pointer;
+  }
+
+  .brand {
+    width: 150px;
+    visibility: visible;
+  }
+
+  .navbar {
+    padding: 0 20px 0 20px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    max-width: 100%;
+    height: 70px;
+    width: 100vw;
+  }
+
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    -webkit-box-pack: end !important;
+    -webkit-justify-content: flex-end !important;
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+    width: 100%;
+  }
+
+  .navbar-nav > .nav-item > button {
+  	margin: 10px;
+  	background: transparent;
+  	border: none;
+  	font-family: 'Raleway';
+  	color: #ccc;
+  	text-transform: uppercase;
+  	font-size: 11px;
+  	font-weight: 600;
+  	transition: color 0.2s ease-in-out;
   }
 
   .overlay {
@@ -54,5 +97,30 @@
     text-transform: uppercase;
     font-weight: 600;
     font-size: 13px;
+  }
+
+  .icon-github-circled {
+    color: #fff;
+    font-size: 25px;
+    transition: color 0.3s ease-in-out;
+  }
+  .icon-github-circled:hover {
+    cursor: pointer;
+    color: #F22F41;
+  }
+
+  .icon-google-plus-circle {
+    color: #fff;
+    font-size: 25px;
+    transition: color 0.3s ease-in-out;
+  }
+  .icon-google-plus-circle:hover {
+    cursor: pointer;
+    color: #F22F41;
+  }
+  .icon-down-open {
+    font-size: 50px;
+    color: #333;
+    transition: all 0.1s ease-in-out;
   }
 }
