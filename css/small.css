@@ -6,6 +6,7 @@ body {
 	background-color: #111;
 	color: #fff;
 	font-family: 'Raleway';
+	overflow-x: hidden;
 }
 h1 {
 	text-transform: uppercase;
