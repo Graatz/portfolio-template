@@ -14,11 +14,32 @@
   	font-size: 25px;
   }
   p {
+    font-family: 'Quicksand', sans-serif;
+  	font-weight: 700;
   	font-size: 13px;
   }
 
   .col {
-    max-width: 70%;
+    max-width: 750px;
+
+  }
+
+  .background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.05;
+    transform: translate(0, -230px);
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .background > p {
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 200px;
   }
 
   .img-container {
@@ -89,13 +110,8 @@
   	position: absolute;
   	transition: opacity 0.15s ease-in-out;
   }
-  .overlay >  h5 {
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 24px;
-  }
   .overlay >  p {
-    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 600;
     font-size: 13px;
   }

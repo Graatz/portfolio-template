@@ -24,7 +24,8 @@ h3 {
 	margin: 0;
 }
 p {
-	font-weight: 600;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 700;
 	color: #777;
 	font-size: 12px;
 	margin-bottom: 5px;
@@ -38,12 +39,36 @@ a.logo:focus {
 	outline: none;
 }
 
-.col {
-	text-align: center;
+.background {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
 	justify-content: center;
-	max-width: 100%;
+	opacity: 0.05;
+	transform: translate(0, -200px);
+	overflow: hidden;
+	white-space: nowrap;
+}
+.background > p {
+	font-family: 'Raleway';
+	font-weight: 600;
+	font-size: 100px;
+}
+
+.col {
+	text-align: start;
+	justify-content: start;
+	max-width: 600px;
 	padding-right: 30px;
 	padding-left: 20px;
+}
+
+.copyright {
+	font-family: 'Quicksand', sans-serif;
+	color: #888;
+	font-size: 13px;
 }
 
 .primary-color {
@@ -57,7 +82,7 @@ a.logo:focus {
 .top-row {
 	position: relative;
 	width: 100vw;
-	height: 25vh;
+	height: 0vh;
 }
 
 .middle-row {
@@ -65,7 +90,7 @@ a.logo:focus {
 	align-items: center;
 	justify-content: center;
 	width: 100vw;
-	height: 50vh;
+	height: 100vh;
 	position: relative;
 }
 
@@ -75,7 +100,7 @@ a.logo:focus {
 	justify-content: center;
 	position: relative;
 	width: 100vw;
-	height: 25vh;
+	height: 0vh;
 }
 
 .img {
@@ -118,6 +143,7 @@ a.logo:focus {
 	font-size: 15px;
 }
 .overlay >  p {
+	font-family: 'Quicksand', sans-serif;
 	font-size: 13px;
 	color: #eee;
 }
@@ -188,7 +214,7 @@ ul.navbar-nav {
 	transition: color 0.2s ease-in-out;
 }
 .navbar-nav > .nav-item > button:hover {
-	color: #fff;
+	color: #F22F41;
 	outline: 0;
 }
 .navbar-nav > .nav-item > button:focus {

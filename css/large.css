@@ -7,29 +7,49 @@
   }
   h1 {
     text-transform: uppercase;
-  	font-size: 55px;
+  	font-size: 70px;
     margin: 0;
   }
   h2 {
+    font-weight: 100;
     text-transform: uppercase;
-  	font-size: 35px;
+  	font-size: 45px;
     margin: 0 0 10px 0;
   }
   h3 {
     margin: 0;
     text-transform: uppercase;
-  	font-size: 15px;
+  	font-size: 20px;
   }
   p {
-    font-weight: 600;
-    color: #666;
+    font-family: 'Quicksand';
+    color: #888;
   	font-size: 14px;
     margin: 0 0 5px 0;
+    line-height: 20px;
+  }
+
+  .background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.05;
+    transform: translate(0, -150px);
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .background > p {
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 300px;
   }
 
   .col {
     text-align: center;
-  	max-width: 900px;
+  	max-width: 1080px;
   	padding: 0;
   }
 
@@ -131,6 +151,31 @@
     padding-top: 20px;
   }
 
+  .tag {
+    font-family: 'Cutive Mono', monospace;
+    margin: 5px;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-radius: 5px;
+    height: 30px;
+    width: auto;
+    color: #aaa;
+    background-color: transparent;
+  }
+
+  .tag-cloud {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
   .overlay {
   	background-color: transparent;
   	display: flex;
@@ -145,15 +190,16 @@
     transform: scale(0.5);
   	transition: all 0.15s ease-in-out;
   }
-  .overlay >  h5 {
-    text-transform: none;
-    font-weight: 400;
-    font-size: 34px;
-  }
-  .overlay >  p {
-    color: #ccc;
+  .overlay >  h2 {
+    font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 40px;
+  }
+  .overlay >  p {
+    font-family: 'Quicksand', sans-serif;
+    color: #ccc;
+    font-weight: 200;
     font-size: 13px;
   }
   .overlay > button:focus + .overlay{
@@ -244,7 +290,7 @@
   }
   .icon-down-open {
     font-size: 50px;
-    color: #333;
+    color: #222;
     transition: all 0.1s ease-in-out;
   }
   .icon-down-open:hover {
